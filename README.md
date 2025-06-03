@@ -1,47 +1,44 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19659925&assignment_repo_type=AssignmentRepo)
-# MongoDB Fundamentals Assignment
+# MongoDB Week 1 Project — PLP Bookstore
 
-This assignment focuses on learning MongoDB fundamentals including setup, CRUD operations, advanced queries, aggregation pipelines, and indexing.
+## Overview
 
-## Assignment Overview
+This project demonstrates the fundamentals of MongoDB including database setup, CRUD operations, advanced queries, aggregation pipelines, and indexing using a sample bookstore database.
 
-You will:
-1. Set up a MongoDB database
-2. Perform basic CRUD operations
-3. Write advanced queries with filtering, projection, and sorting
-4. Create aggregation pipelines for data analysis
-5. Implement indexing for performance optimization
+---
 
-## Getting Started
+## Project Structure
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install MongoDB locally or set up a MongoDB Atlas account
-4. Run the provided `insert_books.js` script to populate your database
-5. Complete the tasks in the assignment document
+- `insert_books.js` — Script to insert 10 sample book documents into the `books` collection.
+- `queries.js` — MongoDB queries for CRUD operations, filtering, sorting, pagination, and aggregation.
+- Screenshots of MongoDB Compass/Atlas showing collections and sample data.
 
-## Files Included
+---
 
-- `Week1-Assignment.md`: Detailed assignment instructions
-- `insert_books.js`: Script to populate your MongoDB database with sample book data
+## Prerequisites
 
-## Requirements
+- MongoDB Community Edition installed locally **OR** a MongoDB Atlas cluster set up.
+- Access to `mongosh` (MongoDB Shell) or MongoDB Compass.
 
-- Node.js (v18 or higher)
-- MongoDB (local installation or Atlas account)
-- MongoDB Shell (mongosh) or MongoDB Compass
+---
 
-## Submission
+## How to Run
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+### 1. Setup Database & Collection
 
-1. Complete all tasks in the assignment
-2. Add your `queries.js` file with all required MongoDB queries
-3. Include a screenshot of your MongoDB database
-4. Update the README.md with your specific setup instructions
+Open `mongosh` and run:
 
-## Resources
 
-- [MongoDB Documentation](https://docs.mongodb.com/)
-- [MongoDB University](https://university.mongodb.com/)
-- [MongoDB Node.js Driver](https://mongodb.github.io/node-mongodb-native/) 
+use plp_bookstore
+
+
+### 2. Insert Sample Data
+Load the insert script to populate the books collection:
+
+`load("insert_books.js")`
+Or copy-paste the contents of insert_books.js directly in the shell.
+
+### 3. Run Queries
+Load and run all queries from queries.js:
+
+`load("queries.js")`
+You can also run queries individually in the shell or via MongoDB Compass.
